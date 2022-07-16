@@ -21,9 +21,6 @@ class homescreen extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                      content: Text(' Employer details are in a click here')));
-
                   Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
                     return Employee();
                   }));

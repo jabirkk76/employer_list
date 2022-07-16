@@ -44,5 +44,7 @@ class _SplashscreenState extends State<Splashscreen> {
     Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (ctx) {
       return homescreen();
     }));
+    ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Employer details are in a click here')));
   }
 }
